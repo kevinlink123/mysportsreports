@@ -1,0 +1,23 @@
+{% extends "nbainjury/base.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+<h1>NBA Injury Reports</h1>
+<h3>Select a team to check it's injury report</h3>
+
+<div class="main-selection-teams-container">
+    {% for division, teams in teams_data.items %}
+    <div class="division-container">
+        <h3>{{ division|title }} Division</h3>
+        <div class="teams-container">
+            {% for team in teams %}
+            <a href="{% url 'nbainjury:team_injury_report' team %}" class="team">{{ team.city|truncatechars:7 }} {{ team.team_name|truncatechars:7 }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

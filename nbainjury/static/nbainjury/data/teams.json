@@ -1,0 +1,8 @@
+{
+    "atlantic": [{"city": "Toronto", "team_name": "Raptors"}, {"city" :"Boston", "team_name": "Celtics"}, {"city": "New York", "team_name": "Knicks"}, {"city": "Brooklyn", "team_name": "Nets"}, {"city": "Philadelphia", "team_name": "76ers"}],
+    "central": [{"city": "Cleveland", "team_name": "Cavaliers"}, {"city": "Indiana", "team_name" :"Pacers"}, {"city": "Detroit", "team_name": "Pistons"}, {"city": "Chicago", "team_name": "Bulls"}, {"city": "Milwaukee", "team_name": "Bucks"}],
+    "southeast": [{"city": "Miami", "team_name": "Heat"}, {"city": "Atlanta", "team_name": "Hawks"}, {"city": "Charlotte", "team_name": "Hornets"}, {"city": "Washington", "team_name": "Wizards"}, {"city": "Orlando", "team_name": "Magic"}],
+    "northwest": [{"city": "Oklahoma City", "team_name": "Thunder"}, {"city": "Portland", "team_name": "Trail Blazers"}, {"city": "Utah", "team_name": "Jazz"}, {"city": "Denver", "team_name": "Nuggets"}, {"city": "Minnesota", "team_name": "Timberwolves"}],
+    "pacific": [{"city": "Golden State", "team_name": "Warriors"}, {"city": "Los Angeles", "team_name": "Clippers"}, {"city": "Sacramento", "team_name": "Kings"}, {"city": "Phoenix", "team_name": "Suns"}, {"city": "Los Angeles", "team_name": "Lakers"}],
+    "southwest": [{"city": "San Antonio", "team_name": "Spurs"}, {"city": "Dallas", "team_name": "Mavericks"}, {"city": "Memphis", "team_name": "Grizzlies"}, {"city": "Houston", "team_name": "Rockets"}, {"city": "New Orleans", "team_name": "Pelicans"}]
+}
