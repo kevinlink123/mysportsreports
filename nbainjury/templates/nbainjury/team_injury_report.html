@@ -7,7 +7,34 @@
 <h1>{{ team_name }}</h1>
 
 <div class="main-container-team-injury-report">
-    <div>REPORT INFO</div>
+    {% if headers and table_data %}
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr class="headers-row">
+                    {% for header in headers %}
+                    <th class="header">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody class="table-body-container">
+                {% for player in table_data %}
+                <tr class="data-container">
+                    <td class="data-cell">{{ player.name }}</td>
+                    <td class="data-cell">{{ player.team }}</td>
+                    <td class="data-cell">{{ player.last_update }}</td>
+                    <td class="data-cell">{{ player.last_report }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="no-injuries-container">
+        <h3>No injuries reported by team!</h2>
+        <a href="{% url 'nbainjury:index' %}">Go back</a>
+    </div>
+    {% endif %}
 </div>
 
 {% endblock %}

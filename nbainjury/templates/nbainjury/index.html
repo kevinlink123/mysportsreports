@@ -13,7 +13,7 @@
         <h3>{{ division|title }} Division</h3>
         <div class="teams-container">
             {% for team in teams %}
-            <a href="{% url 'nbainjury:team_injury_report' team %}" class="team">{{ team.city|truncatechars:7 }} {{ team.team_name|truncatechars:7 }}</a>
+            <a href="{% url 'nbainjury:team_injury_report' team.alias %}" class="team">{{ team.city|truncatechars:7 }} {{ team.team_name|truncatechars:7 }}</a>
             {% endfor %}
         </div>
     </div>
